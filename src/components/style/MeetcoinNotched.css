@@ -1,0 +1,348 @@
+.MeetCOin-Footer-Conteiner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  overflow: hidden;
+  gap: 3rem;
+}
+
+.MEttcoin-Footer-Content {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Footer-Heads {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Footer-Heads h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+.Footer-Heads p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.Innter-footer-gradiet-bg {
+  width: 1440px;
+  height: 110vh;
+  background: #e268be;
+  background: linear-gradient(
+    90deg,
+    rgba(226, 104, 190, 1) 0%,
+    rgba(253, 198, 47, 1) 97%
+  );
+  border-radius: 20px;
+}
+.Innter-footer-white-bg {
+  width: 570px;
+  height: 140px;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+}
+.Footer-Coin {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  right: 10%;
+}
+.Footer-Left-Content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Footer-Left-Content h1 {
+  font-size: 70px;
+  font-weight: 300;
+  color: white;
+}
+.FOoter-Lien {
+  width: 340px;
+  height: 1px;
+  background-color: white;
+  margin-top: 10%;
+  margin-bottom: 6%;
+}
+
+.Inner-FOoter-Row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.Footer-Right-Content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Subtract-image {
+  position: relative;
+  top: 20%;
+}
+.FOOter-STAR {
+  position: relative;
+  right: 33%;
+  top: 43%;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 100px;
+  padding: 1rem;
+}
+.Footer-Card {
+  width: 250px;
+  height: 100%;
+  border-radius: 15px;
+  position: relative;
+  bottom: 83%;
+  left: 14%;
+  background-color: white;
+}
+.CARD-FOOTER {
+  width: 420px;
+  height: 270px;
+  position: relative;
+  top: 14%;
+}
+.CARD-TEXT {
+  font-weight: 700;
+  background: linear-gradient(
+    90deg,
+    rgba(226, 104, 190, 1) 0%,
+    rgba(253, 198, 47, 1) 97%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  bottom: 45%;
+  left: 34%;
+  opacity: 70%;
+  font-weight: bold;
+  font-size: 30px;
+  display: inline-block;
+  transform: rotate(13deg);
+  transform-origin: center;
+  line-height: 27px;
+}
+
+.Establidad {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 56%;
+  left: 40%;
+  font-weight: 300;
+}
+.HAZ {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  position: relative;
+  bottom: 50%;
+  left: 3%;
+  padding: 0.5rem;
+}
+.Footer-MEETCOIN-LOGO {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  gap: 30px;
+}
+.Footer-MEETCOIN-LOGO h1 {
+  font-size: 60px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.FOoter-Last-Lien {
+  width: 85%;
+  margin: auto;
+  height: 1px;
+  background-color: rgb(114, 114, 114);
+  margin-top: 2rem;
+}
+.Footer-End {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 2000px) and (max-width: 2560px) {
+  .Footer-Left-Content {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+  }
+  .Footer-Right-Content {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    gap: 50px;
+  }
+}
+
+/* Standard desktop sizes */
+@media screen and (min-width: 1441px) and (max-width: 1999px) {
+  .Footer-Left-Content {
+    width: 50%;
+    height: 70%;
+    margin: auto;
+  }
+  .Footer-Right-Content {
+    width: 50%;
+    height: 65%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .Footer-Left-Content {
+    width: 50%;
+    height: 70%;
+    margin: auto;
+  }
+  .Footer-Right-Content {
+    width: 50%;
+    height: 80%;
+    margin: auto;
+  }
+}
+
+/* HIDE ON MOBILE - 992px and below */
+@media screen and (max-width: 1100) {
+  .MEttcoin-Footer-Content {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Innter-footer-gradiet-bg {
+    width: 1440px;
+    height: 130vh;
+    background: #e268be;
+    background: linear-gradient(
+      90deg,
+      rgba(226, 104, 190, 1) 0%,
+      rgba(253, 198, 47, 1) 97%
+    );
+    border-radius: 20px;
+  }
+  .Footer-Left-Content {
+    width: 50%;
+    height: 100%;
+  }
+  .Footer-Right-Content {
+    width: 50%;
+    height: 103%;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 1023px) {
+  .MEttcoin-Footer-Content {
+    display: none;
+  }
+}
+@media screen and (min-width: 1023px) and (max-width: 2500px) {
+  .MobileScreenFooter {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1280px) {
+  .MEttcoin-Footer-Content {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .Innter-footer-gradiet-bg {
+    width: 1440px;
+    height: 130vh;
+    background: #e268be;
+    background: linear-gradient(
+      90deg,
+      rgba(226, 104, 190, 1) 0%,
+      rgba(253, 198, 47, 1) 97%
+    );
+    border-radius: 20px;
+  }
+  .Footer-Left-Content {
+    width: 50%;
+    height: 100%;
+  }
+  .Footer-Right-Content {
+    width: 50%;
+    height: 90%;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1390px) {
+  .MEttcoin-Footer-Content {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .Innter-footer-gradiet-bg {
+    width: 1440px;
+    height: 130vh;
+    background: #e268be;
+    background: linear-gradient(
+      90deg,
+      rgba(226, 104, 190, 1) 0%,
+      rgba(253, 198, 47, 1) 97%
+    );
+    border-radius: 20px;
+  }
+  .Footer-Left-Content {
+    width: 50%;
+    height: 100%;
+  }
+  .Footer-Right-Content {
+    width: 50%;
+    height: 80%;
+    gap: 20px;
+  }
+}

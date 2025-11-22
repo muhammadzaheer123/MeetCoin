@@ -1,0 +1,18 @@
+services:
+  meetcoin-landing:
+    image: registry.gitlab.com/mercado-meet/meetcoin-landing:latest
+    restart: unless-stopped
+    container_name: meetcoin-landing
+    environment:
+      - NODE_ENV=production
+      - PORT=3003
+      - VIRTUAL_PORT=3003
+      - VIRTUAL_HOST=meetcoin.io
+      - LETSENCRYPT_HOST=meetcoin.io
+      - LETSENCRYPT_EMAIL=eleazar.gamezd@gmail.com
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true

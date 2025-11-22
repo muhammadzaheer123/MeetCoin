@@ -1,0 +1,210 @@
+{
+  "nav": {
+    "home": "Home",
+    "market": "Market Place",
+    "sell": "Start Selling",
+    "pago": "Pago Meet",
+    "meetcoin": "MeetCoin"
+  },
+
+  "cta": {
+    "download": "Download App",
+    "downloadShort": "Download App",
+    "learnMore": "Learn more",
+    "getStarted": "Get started"
+  },
+
+  "hero": {
+    "badge": "Secure commerce",
+    "title": { "highlight": "Market Place", "rest": "with AI & Web3 Wallet" },
+    "subtitle": "Technology & blockchain",
+    "description": "Discover a modern marketplace with seamless Web3 payments, rewards, and verified sellers. Fast, secure, and built for everyone.",
+    "ctas": {
+      "primary": { "label": "Get the app" },
+      "secondary": { "label": "Start selling" }
+    },
+    "cards": { "sales": "Successful sales", "discounts": "Monthly discounts" },
+    "pills": { "growth": "347.23%", "usersSuffix": "12k+" },
+
+    "coin": "MEETCOIN",
+    "headlineBottom": "YOUR STABLECOIN FOR",
+    "tagline": "TECHNOLOGY • BLOCKCHAIN • REGULATED STABLECOIN",
+    "cashIn": "IN",
+    "cashC": "P",
+    "cashRest": "AY FOR EVERYTHING",
+    "cashRestbottom": "1:1 with the US dollar.",
+    "HEroLastPara": "A stablecoin designed for everyday use — buy, send, and receive instantly, backed by dollars."
+  },
+
+  "meetcoin": {
+    "headlineTop": "EARN",
+    "headlineMiddle": "MEETCOIN",
+    "headlineBottom": "IN CASHBACK",
+    "features": {
+      "earnMTC": "Earn MTC",
+      "stabilization": "Stabilization",
+      "regulated": "Regulated token"
+    },
+    "systems": {
+      "title": "More than a cryptocurrency, a financial bridge.",
+      "subtitle": "Integrations & on-ramping"
+    },
+    "transparent": {
+      "title": "Totally transparent",
+      "reserve": "Reserves & stability",
+      "adoption": "Generalized adoption"
+    },
+    "download": { "title": "Download here" }
+  },
+  "mtc": {
+    "MTCrightLogo1": "Instant Cashback",
+    "MTCrightPara1": "Earn MTC on every purchase.",
+    "MTCrightLogo2": "Exclusive Discounts",
+    "MTCrightPara2": "Pay with MTC and access factory-level prices on top products.",
+    "MTCrightLogo3": "1:1 with USD",
+    "MTCrightPara3": "Stability for spending, payments, and saving.",
+    "MTCLogo": "MTC",
+    "MTCPercentage": "$1 USD ≈ 1 MTC",
+    "MTCPara": "MeetCoin Value",
+    "MTCLeftLogo2": "The simplest way to",
+    "MTCLeftLogo1": "pay with crypto",
+    "MTCLeftPara": "MeetCoin is not just another cryptocurrency — it's your stable payment coin. Send it, receive it, and use it to buy anything on Mercado Meet. Plus, with MTC you get cashback and exclusive discounts so your money goes further."
+  },
+  "Sistamas": {
+    "sistemasTitle": "A financial bridge",
+    "sistemasHeading": "for your everyday life",
+    "sistemasHeadingHighlight": "MTC is the native token of the Mercado Meet and Pago Meet ecosystem. Use it to charge, pay, send, and save; integrate crypto payments into your business with ultra-low fees and 24/7 liquidity.",
+    "sistemasParagraph": "Instant payments: transfer MTC in seconds from your wallet.",
+    "sistemasParagraph2": "Connection with exchanges and P2P markets (coming soon): swap MTC for other cryptocurrencies whenever you need.",
+    "ExploreButton": "Explore Mercado Meet"
+  },
+  "Stablecoin": {
+    "Stablefooter": "OFFICIAL TOKEN OF",
+    "Stableheading": "SYSTEMS & INTEGRATIONS",
+    "Stabletitle3": " play, guess, and win MTC",
+    "Stabletitle4": "in the Marketplace & Wallet",
+    "Stableparagraph1": "Play in a simple way: choose a number from 00 to 99, spin the wheel and, if you guess correctly, you win MTC that you can use to shop on Mercado Meet, redeem for products, or exchange for money.",
+    "Stableparagraph2": "Win MTC instantly — test your luck.",
+    "Stableparagraph3": "Use it wherever you want — pay on Mercado Meet with exclusive discounts.",
+    "StableCOinBtn": "Get MTC"
+  },
+  "Pogomeet": {
+    "PogoMeetSecOneHead": "IN YOUR WALLET",
+    "PogoMeetSecOnePara1": "Buy MTC with credit card, debit card, or bank transfer.",
+    "PogoMeetSecOnePara2": "Instant sends and transfers.",
+    "PogoMeetSecOnePara3": "Automatic cashback on your purchases and marketplace withdrawals.",
+    "PogoMeetSecOnePara4": "You have 100% control — we do not store your keys or private access.",
+    "PogoMeetSecOneBtn": "Download Wallet",
+
+    "PogoMeetSecTwoHead": "IN YOUR MARKETPLACE",
+    "PogoMeetSecTwoPara1": "Pay with MTC for any product in the marketplace.",
+    "PogoMeetSecTwoPara2": "Exclusive discounts and factory-level prices when paying with MTC.",
+    "PogoMeetSecTwoPara3": "Vendor payments in MTC with ultra-low fees.",
+    "PogoMeetSecTwoBtn": "Download App"
+  },
+  "Respaldado": {
+    "RespaldadoHead1": "We are pegged",
+    "RespaldadoHead2": " 1:1 to the dollar.",
+    "RespaldadoCardHead1": "Backing & Stability",
+    "RespaldadoCardPara1": "MTC maintains a 1:1 parity with USD, and its backing is denominated in USDT, with controls and strong compliance and audit practices. Our priority is ensuring you can pay, save, and settle with the confidence of a stable currency for everyday use.",
+    "RespaldadoHeadPara2": "1:1 parity with USD for stable purchases.",
+    "RespaldadoHeadPara3": "Backed by USDT with custody controls.",
+    "RespaldadoHeadPara4": "Ongoing reporting and operational monitoring.",
+    "RespaldadoHeadPara5": "Best practices in compliance and security.",
+    "RespaldadoCardParaBtn": "Learn about MTC’s backing"
+  },
+  "Gestio": {
+    "GestionHead1": "Sell more",
+    "GestionHead2": "with lower fees when charging in MTC",
+    "GestionPara1": "Receive payments in MTC on Mercado Meet and reduce your selling costs compared to traditional marketplaces. Settle whenever you want and offer better prices to your customers thanks to our more efficient cost structure.",
+    "GestionPara2": "With MeetCoin you can earn rewards, send and receive payments instantly, shop in the marketplace, and use it as a financial asset with real market value.",
+    "GestionPara3": "Your money, your control, your digital future.",
+    "GestionBtn": "Digitize Now"
+  },
+  "meetcards": {
+    "ColFirstPara1": "MARKETPLACE",
+    "ColFirstPara2": "MERCADO MEET",
+    "ColFirstPara3": "MERCADO LIBRE",
+    "ColFirstPara4": "AMAZON",
+    "ColFirstPara5": "TEMU",
+
+    "ColSecondPara1": "SALES COMMISSION",
+    "ColSecondPara2": "1.5%",
+    "ColSecondPara3": "13% – 20% approx.",
+    "ColSecondPara4": "8% – 15% typical (up to 45% in some cases)",
+    "ColSecondPara5": "5% – 20% approx.",
+
+    "ColThirdPara1": "Characteristics",
+    "ColThirdPara2": "Preferential commission for payments in MTC. Fast processing.",
+    "ColThirdPara3": "Depends on category and publication type.",
+    "ColThirdPara4": "“Referral fee” per category + minimum charges.",
+    "ColThirdPara5": "Sales commission; conditions vary by agreement/market.",
+    "MeetCardFooter": "Exclusive preferential commission for withdrawing sales balance in MTC on PagoMeet."
+  },
+  "Ganameet": {
+    "GanaMeetbackgroundText": "DOWNLOAD HERE",
+    "GanaMeetintroText": "Download the Wallet &",
+    "GanaMeettitlePart1": "EARN"
+  },
+  "Juega": {
+    "JuegaTitle": "Play, Earn and ",
+    "JuegaText": "With Meetcoin, fun also becomes an opportunity. Our play-to-earn system allows you to enjoy unique gaming experiences while accumulating real Meetcoins. Each game is not just entertainment: it's your gateway to the future of digital finance, where the time you invest in playing transforms into value.",
+    "JuegaButton": "Go to the game"
+  },
+  "Tokenreq": {
+    "headline": {
+      "bold": "The token that is",
+      "rest": "revolutionizing the global financial industry"
+    },
+    "sectionTitle": "SYSTEMS & INTEGRATIONS",
+    "subTitle": {
+      "light": "More than a cryptocurrency,",
+      "bold": "a financial bridge."
+    },
+    "paragraph1": "Meetcoin is the native cryptocurrency of the MercadoMeet and PagoMeet ecosystem.",
+    "paragraph2": "You can receive it as cashback on your purchases, send or receive it through the wallet, and even use it as a financial asset that grows with you."
+  },
+  "MeetcoinNotched": {
+    "FooterHEadig": "MEETCOIN",
+    "FooterHeadPara": " Transparency, Compliance, and Backing",
+    "FooterCaption1": "• The availability of services and reporting obligations may vary by country and applicable regulations.",
+    "FooterCaption2": "• MeetCoin does not in itself constitute an offer of securities. Review the Terms and Conditions and the Compliance Policy.",
+    "FooterCaption3": "• We are currently undergoing alignment with regulatory frameworks applicable in the U.S. for stablecoins and digital payments.",
+
+    "FooterPara1": "HOME",
+    "FooterPara2": "MARKETPLACE",
+    "FooterPara3": "START SELLING",
+    "FooterPara4": "PAGO MEET",
+    "FooterPara5": "MEETCOIN.CASH",
+
+    "subtitle": "Buy and pay with freedom",
+    "description": "Meetcoin is the native crypto asset of MercadoMeet and the PagoMeet wallet. Designed to be more than a payment method, Meetcoin lets you earn rewards, make virtual purchases, send and receive money instantly, and also acts as a financial investment asset.",
+    "regulatedToken": {
+      "title": "Regulated Token:",
+      "text": "Designed under strict financial security standards."
+    },
+    "stability": {
+      "title": "Stability and Liquidity",
+      "text": "Designed for seamless operation across exchanges and trading platforms."
+    },
+    "growth": {
+      "title": "Grow Your Capital",
+      "text": "Hold Meetcoin as a digital asset and take part in the new global financial model."
+    },
+    "footer": {
+      "privacy": "Privacy Policy",
+      "copyright": "Copyright © 2024 COMPANY. All rights reserved.",
+      "terms": "Terms of Service"
+    }
+  },
+  "MobileFooter": {
+    "stability": {
+      "title": "Stability and Liquidity",
+      "text": "Designed for seamless operation across exchanges and trading platforms."
+    },
+    "growth": {
+      "title": "Grow Your Capital",
+      "text": "Hold Meetcoin as a digital asset and take part in the new global financial model."
+    }
+  }
+}

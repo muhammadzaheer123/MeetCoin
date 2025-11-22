@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  meetcoin-landing-dev:
+    image: registry.gitlab.com/mercado-meet/meetcoin-landing:dev
+    container_name: meetcoin-landing-dev
+    restart: unless-stopped
+    ports:
+      - "3003:3003"
+    environment:  
+      - NODE_ENV=development
+      - PORT=3003
+      # Add your Next.js environment variables here
+      # Example:
+      # - NEXT_PUBLIC_API_URL=https://api-dev.example.com
+      # - NEXT_PUBLIC_SITE_URL=https://dev.example.com
+      # - DATABASE_URL=postgresql://...
+    networks:
+      - meetcoin-network-dev
+
+networks:
+  meetcoin-network-dev:
+    driver: bridge

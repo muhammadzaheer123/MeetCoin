@@ -1,0 +1,80 @@
+# GitLab CI/CD Pipeline for Next.js App (meetcoin)
+stages:
+  - build
+  - deploy
+
+variables:
+  DOCKER_IMAGE_NAME: "mercado-meet/meetcoin-landing"
+  DOCKER_IMAGE_TAG: "latest"
+  DOCKER_IMAGE_TAG_DEV: "dev"
+  CI_REGISTRY: "registry.gitlab.com"
+
+build:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+  before_script:
+    - echo "=== Debug Information ==="
+    - echo "CI_REGISTRY=$CI_REGISTRY"
+    - echo "CI_REGISTRY_USER=$CI_REGISTRY_USER"
+    - echo "DOCKER_IMAGE_NAME=$DOCKER_IMAGE_NAME"
+    - echo "Full image path=$CI_REGISTRY/$DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG"
+    - echo "=========================="
+  script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+    - docker build -t $CI_REGISTRY/$DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG .
+    - docker push $CI_REGISTRY/$DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG
+  only:
+    - main
+
+deploy:
+  stage: deploy
+  script:
+    - apt-get update -qy
+    - apt-get install -y openssh-client
+    - mkdir -p /root/.ssh
+    - echo "$SSH_PRIVATE_KEY" > /root/.ssh/id_rsa
+    - chmod 600 /root/.ssh/id_rsa
+    - ssh -o StrictHostKeyChecking=no -i /root/.ssh/id_rsa -T $SSH_USER@$SSH_SERVER "echo $CI_REGISTRY_PASSWORD | docker login $CI_REGISTRY -u $CI_REGISTRY_USER --password-stdin"
+    - ssh -o StrictHostKeyChecking=no -i /root/.ssh/id_rsa -T $SSH_USER@$SSH_SERVER "mkdir -p /root/meetcoin"
+    - scp -o StrictHostKeyChecking=no -i /root/.ssh/id_rsa ./pipeline/deploy/prod/docker-compose.yml $SSH_USER@$SSH_SERVER:/root/meetcoin/
+    - ssh -o StrictHostKeyChecking=no -i /root/.ssh/id_rsa -T $SSH_USER@$SSH_SERVER 'cd /root/meetcoin && docker compose pull && docker compose up -d --remove-orphans --force-recreate'
+    - ssh -o StrictHostKeyChecking=no -i /root/.ssh/id_rsa -T $SSH_USER@$SSH_SERVER 'docker system prune -f'
+  only:
+    - main
+
+build_dev:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+  before_script:
+    - echo "=== Debug Information ==="
+    - echo "CI_REGISTRY=$CI_REGISTRY"
+    - echo "CI_REGISTRY_USER=$CI_REGISTRY_USER"
+    - echo "DOCKER_IMAGE_NAME=$DOCKER_IMAGE_NAME"
+    - echo "Full image path=$CI_REGISTRY/$DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG_DEV"
+    - echo "=========================="
+  script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+    - docker build -t $CI_REGISTRY/$DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG_DEV .
+    - docker push $CI_REGISTRY/$DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG_DEV
+  only:
+    - develop
+
+deploy_dev:
+  stage: deploy
+  script:
+    - apt-get update -qy
+    - apt-get install -y openssh-client
+    - mkdir -p /root/.ssh
+    - echo "$SSH_PRIVATE_KEY_DEV" > /root/.ssh/id_rsa
+    - chmod 600 /root/.ssh/id_rsa
+    - ssh -o StrictHostKeyChecking=no -i /root/.ssh/id_rsa -T $SSH_USER_DEV@$SSH_SERVER_DEV "echo $CI_REGISTRY_PASSWORD | docker login $CI_REGISTRY -u $CI_REGISTRY_USER --password-stdin"
+    - ssh -o StrictHostKeyChecking=no -i /root/.ssh/id_rsa -T $SSH_USER_DEV@$SSH_SERVER_DEV "mkdir -p /root/meetcoin-dev"
+    - scp -o StrictHostKeyChecking=no -i /root/.ssh/id_rsa ./pipeline/deploy/dev/docker-compose.yml $SSH_USER_DEV@$SSH_SERVER_DEV:/root/meetcoin-dev/
+    - ssh -o StrictHostKeyChecking=no -i /root/.ssh/id_rsa -T $SSH_USER_DEV@$SSH_SERVER_DEV 'cd /root/meetcoin-dev && docker compose pull && docker compose up -d --remove-orphans --force-recreate'
+    - ssh -o StrictHostKeyChecking=no -i /root/.ssh/id_rsa -T $SSH_USER_DEV@$SSH_SERVER_DEV 'docker system prune -f'
+  only:
+    - develop
