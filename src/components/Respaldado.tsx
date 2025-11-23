@@ -83,7 +83,7 @@ export default function Respaldado() {
             >
               <div className="flex-col justify-center align-middle space-y-3">
                 <motion.h2
-                  className="w-[100%] h-[100%] bg-[#0d0d0d] text-gray-100 border-1 border-gray-600 rounded-[10px] p-3 lg:relative lg:right-18"
+                  className="w-[100%] h-[100%] bg-[#0d0d0d] text-gray-100 border-1 border-gray-600 rounded-[10px] p-3 lg:relative lg:right-18 font-poppins"
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: 0.1 }}
@@ -93,7 +93,7 @@ export default function Respaldado() {
                 </motion.h2>
 
                 <motion.h2
-                  className="w-[100%] h-[100%] bg-[#0d0d0d] text-gray-100 border-1 border-gray-600 rounded-[10px] p-3"
+                  className="w-[100%] h-[100%] bg-[#0d0d0d] text-gray-100 border-1 border-gray-600 rounded-[10px] p-3 font-poppins"
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: 0.2 }}
@@ -103,7 +103,7 @@ export default function Respaldado() {
                 </motion.h2>
 
                 <motion.h2
-                  className="w-[100%] h-[100%] bg-[#0d0d0d] text-gray-100 border-1 border-gray-600 rounded-[10px] p-3 lg:relative lg:right-18"
+                  className="w-[100%] h-[100%] bg-[#0d0d0d] text-gray-100 border-1 border-gray-600 rounded-[10px] p-3 lg:relative lg:right-18 font-poppins"
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: 0.3 }}
@@ -113,7 +113,7 @@ export default function Respaldado() {
                 </motion.h2>
 
                 <motion.h2
-                  className="w-[100%] h-[100%] bg-[#0d0d0d] text-gray-100 border-1 border-gray-600 rounded-[10px] p-3"
+                  className="w-[100%] h-[100%] bg-[#0d0d0d] text-gray-100 border-1 border-gray-600 rounded-[10px] p-3 font-poppins"
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: 0.4 }}

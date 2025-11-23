@@ -126,13 +126,13 @@ export default function Sistamas() {
 
             <motion.p
               variants={fadeLeft}
-              className="lg:w-[80%] sm:w-[100%] text-gray-300 text-[10px] sm:text-[17px] mt-5 lg:mt-8 text-start font-clash border-1 p-2 rounded-2xl"
+              className="lg:w-[80%] sm:w-[100%] text-gray-400 text-[10px] sm:text-[17px] mt-5 lg:mt-8 text-start font-poppins border-1 p-2 rounded-2xl"
             >
               {t("sistemasParagraph")}
             </motion.p>
             <motion.p
               variants={fadeLeft}
-              className="lg:w-[80%] text-gray-300 text-[10px] sm:text-[14px] mt-3 sm:mt-6 lg:mt-5 text-start  font-clash border-1 p-2 rounded-2xl"
+              className="lg:w-[80%] text-gray-400 text-[10px] sm:text-[14px] mt-3 sm:mt-6 lg:mt-5 text-start  font-poppins border-1 p-2 rounded-2xl "
             >
               {t("sistemasParagraph2")}
             </motion.p>

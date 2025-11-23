@@ -27,26 +27,26 @@ export default function Pogomeet() {
                 height={25}
                 className="w-[25px] h-[25px]"
               />
-              <p className="text-white font-semibold text-sm tracking-[0.22em] uppercase">
+              <p className="text-white font-semibold text-sm tracking-[0.22em] uppercase font-clash">
                 <span className="font-normal">Pago</span>Meet
               </p>
             </div>
 
             <div>
-              <h3 className="text-white text-sm tracking-[0.25em] uppercase">
+              <h3 className="text-white text-sm tracking-[0.25em] uppercase font-clash">
                 <span className="font-semibold">MTC </span>
                 {t("PogoMeetSecOneHead")}
               </h3>
             </div>
 
             {/* Bullets row 1 */}
-            <div className="flex flex-col sm:flex-row justify-start gap-6">
+            <div className="flex flex-col sm:flex-row justify-start gap-6 font-clash">
               <Bullet>{t("PogoMeetSecOnePara1")}</Bullet>
               <Bullet>{t("PogoMeetSecOnePara2")}</Bullet>
             </div>
 
             {/* Bullets row 2 */}
-            <div className="flex flex-col sm:flex-row justify-start gap-6">
+            <div className="flex flex-col sm:flex-row justify-start gap-6 font-clash">
               <Bullet>{t("PogoMeetSecOnePara3")}</Bullet>
               <Bullet>{t("PogoMeetSecOnePara4")}</Bullet>
             </div>
@@ -64,7 +64,7 @@ export default function Pogomeet() {
             <button
               className={`w-[155px] h-[37px] rounded-full text-black font-medium
               bg-[linear-gradient(63deg,_#E268BE_17%,_#FDC62F_59%)]
-              hover:opacity-90 transition-all duration-300 font-clash text-[14px]`}
+              hover:opacity-90 transition-all duration-300 font-clash text-[14px] `}
             >
               {t("PogoMeetSecOneBtn")}
             </button>
@@ -126,24 +126,24 @@ export default function Pogomeet() {
                 height={25}
                 className="w-[25px] h-[25px]"
               />
-              <p className="text-white font-semibold text-[12px] leading-3 text-center">
+              <p className="text-white font-semibold text-[12px] leading-3 text-center font-clash">
                 Mercado Meet
               </p>
             </div>
 
             <div className="flex justify-end mt-2">
-              <h3 className="text-white text-sm tracking-[0.25em] uppercase text-right">
+              <h3 className="text-white text-sm tracking-[0.25em] uppercase text-right font-clash">
                 <span className="font-semibold">MTC </span>
                 {t("PogoMeetSecTwoHead")}
               </h3>
             </div>
 
-            <div className="flex flex-col sm:flex-row justify-start gap-6">
+            <div className="flex flex-col sm:flex-row justify-start gap-6 font-clash ">
               <Bullet>{t("PogoMeetSecOnePara1")}</Bullet>
               <Bullet>{t("PogoMeetSecOnePara2")}</Bullet>
             </div>
 
-            <div className="flex flex-col sm:flex-row justify-start gap-6">
+            <div className="flex flex-col sm:flex-row justify-start gap-6 ">
               <Bullet>{t("PogoMeetSecOnePara3")}</Bullet>
             </div>
           </div>
@@ -157,7 +157,7 @@ function Bullet({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex-col items-start gap-3 space-y-3 max-w-xs">
       <div className="mt-1 w-8 h-8 rounded-full bg-gradient-to-r from-[#FF5CCD] via-[#FF72B2] to-[#FFBB00]" />
-      <p className="text-white text-[12px] leading-snug">{children}</p>
+      <p className="text-white text-[14px] leading-snug font-clash">{children}</p>
     </div>
   );
 }

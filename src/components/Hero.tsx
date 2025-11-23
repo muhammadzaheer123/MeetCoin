@@ -46,7 +46,7 @@ export default function Hero() {
           <div className="mt-23">
             <motion.h1
               variants={fadeUp}
-              className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent font-extrabold text-6xl md:text-5xl sm:text-7xl lg:text-6xl xl:text-[120px] mt-6 text-start"
+              className="font-clash bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent font-extrabold text-6xl md:text-5xl sm:text-7xl lg:text-6xl xl:text-[120px] mt-6 text-start"
             >
               {t("coin")}
             </motion.h1>
@@ -137,7 +137,7 @@ export default function Hero() {
             </motion.span>
             {t("cashRest")}
 
-            <div className="text-2xl lg:justify-end lg:text-end text-gray-200 justify-center text-center items-center align-middle w-[100%]">
+            <div className="text-2xl lg:justify-end lg:text-end text-gray-200 justify-center text-center items-center align-middle w-[100%] font-inter">
               {t("cashRestbottom")}
             </div>
 
@@ -174,7 +174,7 @@ export default function Hero() {
           </motion.h1>
         </motion.div>
       </motion.div>
-      <div className="w-[60%] m-auto mt-16 mb-7 text-[15px] border-1 p-3 rounded-[10px] justify-center align-middle text-center text-white">
+      <div className="w-[60%] m-auto mt-16 mb-7 text-[15px] border-1 p-3 rounded-[10px] justify-center align-middle text-center text-white font-inter">
         {t("HEroLastPara")}
       </div>
     </section>

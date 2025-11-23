@@ -155,19 +155,19 @@ export default function Sistemas() {
 
           <motion.p
             variants={fadeUp}
-            className="mx-auto lg:mx-0 w-full lg:w-[85%] text-[#9B9B9B] text-[16px] md:text-[15px] leading-7 mt-3 text-start"
+            className="mx-auto lg:mx-0 w-full lg:w-[85%] text-[#9B9B9B] text-[16px] md:text-[15px] leading-7 mt-3 text-start font-poppins"
           >
             {t("Stableparagraph1")}
           </motion.p>
           <motion.p
             variants={fadeUp}
-            className="mx-auto lg:mx-0 w-full lg:w-[85%] text-[#9B9B9B] text-[15px] md:text-[15px] leading-7 mt-5 text-start border-1 rounded-2xl p-2.5"
+            className="mx-auto lg:mx-0 w-full lg:w-[85%] text-[#9B9B9B] text-[15px] md:text-[15px] leading-7 mt-5 text-start border-1 rounded-2xl p-2.5 font-poppins"
           >
             {t("Stableparagraph2")}
           </motion.p>
           <motion.p
             variants={fadeUp}
-            className="mx-auto lg:mx-0 w-full lg:w-[85%] text-[#9B9B9B] text-[15px] md:text-[15px] leading-7 mt-5 text-start border-1 rounded-2xl p-2.5 lg:text-[15px]"
+            className="mx-auto lg:mx-0 w-full lg:w-[85%] text-[#9B9B9B] text-[15px] md:text-[15px] leading-7 mt-5 text-start border-1 rounded-2xl p-2.5 lg:text-[15px] font-poppins"
           >
             {t("Stableparagraph3")}
           </motion.p>

@@ -40,10 +40,20 @@ export default function MeetcoinNotched() {
                   {t("subtitle")}
                 </p>
 
-                <p className="w-[63%] text-xs text-white font-clash font-extralight mt-5">
+                <p className="w-[63%] text-xs text-black font-clash font-extralight mt-5">
                   {t("description")}
                 </p>
-
+                <br className="FooterParABr"/>
+                <p className="w-[63%] text-xs text-black font-clash font-extralight mt-5">
+                  {t("description")}
+                </p>
+                 <br className="FooterParABr"/>
+                <p className="w-[63%] text-xs text-black font-clash font-extralight mt-5">
+                  {t("description")}
+                </p>
+                <p className="w-[63%] text-xs text-black font-clash font-extralight mt-5">
+                  {t("description")}
+                </p>
                 <span className="FOoter-Lien"></span>
 
                 <h3 className="w-[63%] text-white text-[19] font-bold font-clash">

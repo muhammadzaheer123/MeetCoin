@@ -90,10 +90,11 @@ export default function MeetCoinFeature() {
               <RiExchangeDollarLine />
             </motion.div>
             <div className="flex-1">
-              <h3 className="text-white text-lg sm:text-[20px] lg:text-[22px] font-sans">
+              <h3 className="text-white text-lg sm:text-[20px] lg:text-[19px] font-inter leading-[100%]
+">
                 {t("MTCrightLogo1")}
               </h3>
-              <p className="w-[60%] text-xs sm:text-[13px] leading-5 sm:leading-6 text-white/60 max-w-full sm:max-w-[360px] mt-1 font-clash">
+              <p className="w-[60%] text-xs sm:text-[13px] leading-5 sm:leading-6 text-white/60 max-w-full sm:max-w-[360px] mt-1 font-poppins">
                 {t("MTCrightPara1")}
               </p>
             </div>
@@ -112,10 +113,10 @@ export default function MeetCoinFeature() {
               <GiFamilyHouse />
             </motion.div>
             <div className="flex-1">
-              <h3 className="text-white text-lg sm:text-[20px] lg:text-[22px] font-sans">
+              <h3 className="text-white text-lg sm:text-[20px] lg:text-[22px] font-inter">
                 {t("MTCrightLogo2")}
               </h3>
-              <p className="w-full text-xs sm:text-[13px] leading-5 sm:leading-6 text-white/60 max-w-full sm:max-w-[360px] mt-1 font-clash">
+              <p className="w-full text-xs sm:text-[13px] leading-5 sm:leading-6 text-white/60 max-w-full sm:max-w-[360px] mt-1 font-poppins">
                 {t("MTCrightPara3")}
               </p>
             </div>
@@ -139,10 +140,10 @@ export default function MeetCoinFeature() {
               <RiExchangeDollarFill />
             </motion.div>
             <div className="flex-1">
-              <h3 className="text-white text-lg sm:text-[20px] lg:text-[22px] font-sans">
+              <h3 className="text-white text-lg sm:text-[20px] lg:text-[22px] font-inter">
                 {t("MTCrightLogo3")}
               </h3>
-              <p className="w-full text-xs sm:text-[13px] leading-5 sm:leading-6 text-white/60 max-w-full sm:max-w-[420px] mt-1 font-clash">
+              <p className="w-full text-xs sm:text-[13px] leading-5 sm:leading-6 text-white/60 max-w-full sm:max-w-[420px] mt-1 font-poppins">
                 {t("MTCrightPara3")}
               </p>
             </div>
@@ -205,9 +206,9 @@ export default function MeetCoinFeature() {
           </motion.h2>
           <motion.p
             variants={maybeFade}
-            className="text-white/65 text-sm sm:text-[14px] leading-6 sm:leading-7 max-w-full lg:max-w-[520px] font-clash"
+            className="text-white/65 text-sm sm:text-[14px] leading-6 sm:leading-7 max-w-full lg:max-w-[520px] font-poppins"
           >
-            {t("MTCLeftPara")}s
+            {t("MTCLeftPara")}
           </motion.p>
         </motion.div>
       </div>
